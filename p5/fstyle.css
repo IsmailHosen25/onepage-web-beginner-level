@@ -1,0 +1,500 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 10px;
+}
+:root{
+  --active:#5352ed;
+}
+.flex{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  background-color: var(--active);
+  color:white;
+  padding:0.8rem 1.2rem;
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+button:hover{
+  cursor: pointer;
+}
+/*------------Header Start----------*/
+header{
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+header div nav{
+  height: auto;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+ 
+}
+header .n-div{
+  height: 5rem;
+}
+header .n-div nav div.logo{
+   font-size: 3rem;
+}
+header .n-div nav div.logo:hover{
+  cursor: pointer;
+}
+header .n-div nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .n-div nav ul li{
+  list-style: none;
+}
+header .n-div nav ul li a{
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease-in,color 0.3s ease-in;
+}
+header .n-div nav ul li a:hover{
+  background-color: gray;
+  color:#fff;
+}
+
+header .n-div nav button:hover{
+  transform: scale(1.1,1.1);
+}
+header .h-cont{
+  height: 90%;
+}
+header .h-cont .in-cont{
+ width:90%;
+ height:auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+}
+header .h-cont .in-cont .img{
+ width:60%;
+ height:70%;
+}
+header .h-cont .in-cont .img img{
+  width:100%;
+  height: 100%;
+}
+header .h-cont .in-cont .in-cont1{
+  width:35%;
+  height: 50%;
+  text-align: left;
+
+}
+header .h-cont .in-cont .in-cont1 h2{
+  font-size: 3rem;
+  
+}
+header .h-cont .in-cont .in-cont1 p{
+  font-size: 1.5rem;
+  margin-top:2rem;
+  
+}
+header .h-cont .in-cont .in-cont1 button{
+  margin-top: 2rem;
+}
+header .h-cont .in-cont .in-cont1 button .fa-arrow-right{
+  display: none;
+}
+header .h-cont .in-cont .in-cont1 button:hover .fa-arrow-right{
+  display: inline;
+}
+
+/*------------Header End----------*/
+
+/*--------Section-1 Start---------*/
+.sec1{
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+.sec1 .s1-div{
+  height: 100%;
+}
+.sec1 .s1-div .s1-cont{
+  text-align: center;
+}
+.sec1 .s1-div .s1-cont h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.sec1 .s1-div .s1-cont p{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sec1 .s1-div .s1-cont .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.sec1 .s1-div .s1-cont .btn .divbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.sec1 .s1-div .s1-cont .btn .divbtn .btn2 .unactive{
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.sec1 .s1-div .s1-cont .btn .divbtn .btn2 .unactive:hover{
+  background-color: gray;
+  color:#fff;
+}
+/*--------Section-1 End---------*/
+
+/*--------Section-2 Start---------*/
+.sec2{
+  width: 100%;
+  height: 100vh;
+}
+.sec2 .s2-div{
+  height: 100%;
+}
+.sec2 .s2-div .s2-cont{
+  width:90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec2 .s2-div .s2-cont .s2-in1{
+  width: 22%;
+  height: 38rem;
+  border:2px solid gray;
+  border-radius: 10px;
+  padding:1.5rem;
+  position:relative;
+  transition: transform 0.3s ease-in-out;
+}
+.sec2 .s2-div .s2-cont .s2-in1:hover{
+  border:2px solid black;
+  transform: scale(1.1);
+}
+.sec2 .s2-div .s2-cont .s2-in1 .mp{
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.sec2 .s2-div .s2-cont .s2-in1 h2{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.sec2 .s2-div .s2-cont .s2-in1 .popu{
+  position:absolute;
+  top:-1px;
+  right: -1px;
+  padding:0.6rem 3rem;
+  border:2px solid var(--active);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.sec2 .s2-div .s2-cont .s2-in1 p{
+  font-size:1.5rem ;
+  margin-bottom: 0.5rem;
+}
+.sec2 .s2-div .s2-cont .s2-in1 div.s2btn{
+  margin-top: 5rem;
+  background-color: var(--active);
+  transition: border 0.3s ease-in-out;
+  margin-bottom:1rem;
+}
+.sec2 .s2-div .s2-cont .s2-in1 div.s2btn .fa-arrow-right{
+  color:white;
+  transition: transform 0.3s ease-in-out;
+}
+.sec2 .s2-div .s2-cont .s2-in1 div.s2btn:hover .fa-arrow-right{
+  transform: translatex(3rem);
+}
+/*--------Section-2 End---------*/
+
+/*--------Section-3 Start---------*/
+.sec3{
+  width:100%;
+  height:30vh;
+  overflow: hidden;
+}
+.s3-div{
+  width: 100%;
+  height: 100%;
+}
+.s3-in{
+  border: 1px solid black;
+  width:80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.s3-inner{
+  width:10%;
+  text-align: center;
+}
+.s3-inner h2{
+ font-size: 2rem;
+}
+.s3-inner p{
+  font-size: 1.5rem;
+ }
+/*--------Section-3 End---------*/
+
+/*--------Section-4 Start---------*/
+.sec4{
+  width:100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.s4-div{
+  height: 100%;
+}
+.sec4 .s4-div .s4-in{
+  width:90%;
+}
+.sec4 .s4-div .s4-in .s4heading h2{
+  font-size: 2rem;
+  text-align: center;
+}
+.sec4 .s4-div .s4-in .s4-twocont{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec4 .s4-div .s4-in .s4-twocont .s4-one{
+  width: 49%;
+  background-color: #dfe6e9;
+  padding:2rem;
+}
+.sec4 .s4-div .s4-in .s4-twocont .s4-one>h2{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.sec4 .s4-div .s4-in .s4-twocont .s4-one>p{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sec4 .s4-div .s4-in .s4-twocont .s4-one .s4-mimg .s4-img img{
+  float:left;
+  width:4rem;
+  height: 4rem;
+  border-radius: 30px;
+}
+.sec4 .s4-div .s4-in .s4-twocont .s4-one .s4-mimg .s4-img div.s4-heading{
+  overflow: hidden;
+  padding-left:1rem;
+  padding-top:0.3rem;
+}
+/*--------Section-4 End---------*/
+
+/*--------Section-5 Start---------*/
+.sec5{
+  width:100%;
+  height: 80vh;
+}
+.s5-div{
+  height: 100%;
+}
+.sec5 .s5-div .s5-in{
+  width:90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec5 .s5-div .s5-in .s5-cont{
+  width:65%;
+}
+.sec5 .s5-div .s5-in .s5-cont h2{
+  font-size: 2rem;
+}
+.sec5 .s5-div .s5-in .s5-cont p{
+  font-size: 1.5rem;
+}
+.sec5 .s5-div .s5-in form{
+  height: 80%;
+  width:30%;
+  background-color: #dfe6e9;
+  padding:1.5rem 2rem;
+}
+.sec5 .s5-div .s5-in form h2{
+  font-size: 2rem;
+}
+.sec5 .s5-div .s5-in form label{
+  font-size: 1.5rem;
+}
+.sec5 .s5-div .s5-in form input{
+  width: 100%;
+  height: 3rem;
+}
+.sec5 .s5-div .s5-in form .s5-btn{
+  width:100%;
+}
+.sec5 .s5-div .s5-in form p{
+  font-size: 1.5rem;
+}
+/*--------Section-5 End---------*/
+/*--------Section-6 Start---------*/
+.sec6{
+  width:100;
+  height: 60vh;
+  overflow: hidden;
+}
+.sec6 .s6-div{
+  height: 100%;
+  overflow: hidden;
+}
+.sec6 .s6-div .s6-cont{
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.sec6 .s6-div .s6-cont .s6-fcont{
+  width:60%;
+  overflow: hidden;
+}
+.sec6 .s6-div .s6-cont .s6-fcont h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.sec6 .s6-div .s6-cont .s6-fcont p{
+  width:80%;
+  font-size: 1.5rem;
+}
+.sec6 .s6-div .s6-cont .s6-scont{
+  width:20%;
+}
+.sec6 .s6-div .s6-cont .s6-scont h2{
+  font-size: 2rem;
+}
+.sec6 .s6-div .s6-cont .s6-scont address p{
+  font-size: 1.5rem;
+}
+.sec6 .s6-div .s6-cont .s6-tcont{
+  width:20%;
+}
+.sec6 .s6-div .s6-cont .s6-tcont h2{
+  font-size: 2rem;
+}
+.sec6 .s6-div .s6-cont .s6-tcont p{
+  font-size: 1.5rem;
+}
+/*--------Section-6 End---------*/
+/*--------Section-7 Start---------*/
+footer{
+  width:100%;
+  height: 5vh;
+  background-color: #dfe6e9;
+}
+footer .f-div{
+  width:90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .f-div h2{
+  font-size: 1rem;
+}
+footer .f-div div a{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+/*--------Section-7 End---------*/
+
+/*------------Media Query start---------*/
+@media  screen and (min-width:1200px){
+
+}
+
+
+@media  screen and (max-width:1200px) {
+  .sec2 .s2-div .s2-cont .s2-in1 div.s2btn{
+    margin-top: 3.1rem;
+    margin-bottom:0.7rem;
+  }
+ 
+  
+}
+@media screen and (max-width:1024px){
+  .sec2{
+    height: 180vh;
+  }
+  .sec2 .s2-div .s2-cont .s2-in1{
+    width: 40%;
+  }
+  .sec2 .s2-div .s2-cont:first-child.s2-in1{
+    margin-bottom: 2rem;
+  }
+  .sec5 .s5-div .s5-in .s5-cont{
+    width:60%;
+  }
+  .sec5 .s5-div .s5-in .s5-cont h2{
+    font-size: 1.8rem;
+  }
+  .sec5 .s5-div .s5-in .s5-cont p{
+    font-size: 1.3rem;
+  }
+  .sec5 .s5-div .s5-in form{
+    
+    width:36%;
+  }
+  .sec5 .s5-div .s5-in form p{
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width:768px) {
+  html{
+    font-size: 9px;
+  }
+  .sec2 .s2-div .s2-cont .s2-in1{
+    margin-bottom: 1rem;
+  }
+  .sec2 .s2-div .s2-cont:first-child.s2-in1{
+    margin-bottom: 1rem;
+  }
+  .sec6 .s6-div .s6-cont .s6-fcont{
+    width:55%;
+    overflow: hidden;
+  }
+  .sec6 .s6-div .s6-cont .s6-scont{
+    width:25%;
+  }
+}
+@media screen and (max-width:480px){
+.sec5 .s5-div .s5-in .s5-cont h2{
+  font-size: 1.5rem;
+}
+.sec5 .s5-div .s5-in .s5-cont p{
+  font-size: 1.1rem;
+}
+.sec2{
+  height: 250vh;
+}
+.sec2 .s2-div .s2-cont .s2-in1{
+  width: 100%;
+}
+}
+/*------------Media Query End---------*/
