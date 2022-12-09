@@ -1,0 +1,601 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 10px;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+button{
+    padding:0.8rem 3rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    transition: background-color 0.5s ease,color 0.5s ease;
+}
+button:hover{
+   cursor: pointer;
+   background-color: #bdc3c7;
+   color:black
+}
+img:hover{
+cursor: pointer;
+}
+.active{
+    background-color: #3498db;
+    border: none;
+}
+/*------------Header Start----------*/
+.header{
+    display: block;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.black{
+    background-color: black;
+    height: 10%;
+}
+.header .black nav{
+    font-size: 2rem;
+    width: 85%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .black nav .logo h2{
+    color: #fff;
+}
+.header .black nav .logo:hover{
+    cursor: pointer;
+}
+.header .black nav div.manu ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header .black nav div.manu ul li{
+    padding:1rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+.header .black nav div.manu ul div{
+    color: #fff;
+    display: none;
+}
+.header .black nav div.manu ul li:not(:first-child){
+    margin-left: 0.5rem;
+}
+.header .black nav div.manu ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.header .black nav div.manu ul li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.header .background-img{
+    background-image: url(pic/mbanar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+}
+.header .background-img .content{
+    color:#fff;
+    width:85%;
+    font-size: 2rem;
+}
+.header .background-img .content .inner-content{
+    width:60%;
+}
+.header .background-img .content .inner-content h2{
+    margin-bottom: 2rem;
+}
+.header .background-img .content .inner-content p{
+    margin-bottom: 2rem;
+}
+.header .background-img .content .inner-content .btn .active{
+    margin-right: 2rem;
+}
+/*------------Header End----------*/
+
+/*--------Section-1 Start---------*/
+.sec1{
+    width: 100%;
+    overflow: hidden;
+}
+.sec1 .s1-up {
+  margin-bottom: 5rem;
+}
+.sec1 .s1-up .feature{
+    width:85%;
+    height: 100%;
+}
+.sec1 .s1-up .feature .hadoffeature{
+    text-align: center;
+    margin: 2rem 0rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.sec1 .s1-up .feature .conoffeature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec1 .s1-up .feature .conoffeature div{
+    width:23%;
+    font-size: 1.5rem;
+}
+.sec1 .s1-up .feature .conoffeature div img{
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.sec1 .s1-up .feature .conoffeature div img:hover{
+    cursor: pointer;
+}
+.sec1 .s1-up .feature .conoffeature h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sec1 .s1-up .feature .conoffeature div p{
+    text-align: center;
+}
+.sec1 .s1-bottom { 
+    margin-bottom:5rem;
+}
+.sec1 .s1-bottom .s1-content{
+    width:85%;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec1 .s1-bottom .s1-content div{
+    width:40%;
+}
+.sec1 .s1-bottom .s1-content .s1-img img{
+    float: right;
+    width:25rem;
+    border-radius: 25%;
+}
+.sec1 .s1-bottom .s1-content .s1-incontent {
+    font-size: 2rem;
+}
+.sec1 .s1-bottom .s1-content .s1-incontent h2{
+    margin-bottom: 1rem;
+}
+.sec1 .s1-bottom .s1-content .s1-incontent p{
+    margin-bottom: 1rem;
+}
+.sec1 .s1-bottom .s1-content .s1-incontent ul{
+    margin-bottom: 1rem;
+}
+/*--------Section-1 End---------*/
+
+/*--------Section-2 Start---------*/
+ .sec2{
+    width:100%;
+    overflow: hidden;
+ }
+ .sec2 .s2-flex{
+    overflow: hidden;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+ }
+ .sec2 .s2-flex .s2-content{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+ }
+ .sec2 .s2-flex .s2-content div{
+    width:40%;
+ }
+ .sec2 .s2-flex .s2-content .s2-incontent{
+    font-size: 1.5rem;
+ }
+ .sec2 .s2-flex .s2-content .s2-inimg{
+     height: 60vh;
+ }
+ .sec2 .s2-flex .s2-content .s2-inimg img{
+    display: block;
+    margin: 3rem auto;
+    height: 80%;
+    width: 15rem;
+    border-radius: 10%;
+    transform:skew(-30deg,20deg) ;
+ }
+/*--------Section-2 End---------*/
+
+/*--------Section-3 Start---------*/
+.sec3{
+    width: 100%;
+    overflow: hidden;
+    background-color: aqua;
+}
+.sec3 .s3-flexup{
+    width: 100%;
+    overflow: hidden;
+    background-image: url(pic/sbanar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5rem 0rem;
+}
+.sec3 .s3-flexup .s3-content{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec3 .s3-flexup .s3-content div{
+    width: 30%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.sec3 .s3-flexup .s3-content .s3-inconhead{
+    overflow: hidden;
+    width:100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.sec3 .s3-flexup .s3-content .s3-inpara{
+    overflow: hidden;
+    width:45%;
+}
+.sec3 .s3-flexup .s3-content .s3-inpara p:first-child{
+    margin-bottom: 2rem;
+}
+.sec3 .s3-flexup .s3-content .s3-inpara p:last-child{
+    text-transform: lowercase;
+}
+.sec3 .s3-flexbottom{
+    background-color: black;
+    color: #fff;
+    padding:1rem;
+}
+.sec3 .s3-flexbottom nav{
+    overflow: hidden;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec3 .s3-flexbottom nav div{
+    width: 48%;
+}
+.sec3 .s3-flexbottom nav .s3-btn button:not(:last-child){
+    margin-right: 1rem;
+}
+/*--------Section-3 End---------*/
+
+/*--------Section-4 Start---------*/
+.sec4{
+    width:100%;
+    overflow: hidden;
+}
+.sec4 .s4-flex{
+    overflow: hidden;
+    padding: 2rem 0rem;
+}
+.sec4 .s4-flex .s4-content{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec4 .s4-flex .s4-content .s4-inheadcontent{
+    overflow: hidden;
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom:2rem ;
+}
+.sec4 .s4-flex .s4-content .s4-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    
+}
+.sec4 .s4-flex .s4-content .s4-card .card{
+    width:20%;
+    border:1px solid black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 3%;
+    transition: transform 0.3s ease;
+}
+.sec4 .s4-flex .s4-content .s4-card .card:hover{
+    transform: scale(1.1);
+}
+.sec4 .s4-flex .s4-content .s4-card .card h2{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .s4-content .s4-card .card h1{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .s4-content .s4-card .card p{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .s4-content .s4-card .card button{
+    border: 1px solid black;
+    color: #000;
+}
+.sec4 .s4-flex .s4-content .s4-card .card button:hover{
+    border: none;
+    transition: border 0.3s ease;
+}
+/*--------Section-4 End---------*/
+
+/*--------Section-5 Start---------*/
+.sec5{
+    width:100%;
+    background-color: #bdc3c7;
+    overflow: hidden;
+
+}
+.sec5 .s5-flex{
+    padding: 2rem 0rem;
+    overflow: hidden;
+}
+.sec5 .s5-flex .s5-content{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec5 .s5-flex .s5-content .s5-inheadcontent{
+    overflow: hidden;
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom:2rem ;
+}
+.sec5 .s5-flex .s5-content .s5-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    
+}
+.sec5 .s5-flex .s5-content .s5-card .card{
+    width:30%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 3%;
+    transition: transform 0.3s ease;
+}
+.sec5 .s5-flex .s5-content .s5-card .card h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .s4-content .s4-card .card h4{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.sec5 .s5-flex .s5-content .s5-card .card p{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.sec5 .s5-flexbottom{
+    overflow: hidden;
+}
+
+.sec5 .s5-flexbottom .s5-empty{
+    width:50%;
+    height: 20rem;
+    padding: 2rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.sec5 .s5-flexbottom .s5-empty > div{
+    width:45%;
+    height:80%;
+}
+.sec5 .s5-flexbottom .s5-empty .s5-inempty div{
+    width:100%;
+    height: 30%;
+    border:1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.sec5 .s5-flexbottom .s5-empty .s5-inempty div:hover{
+    cursor: pointer;
+}
+.sec5 .s5-flexbottom .s5-empty .s5-inembot{
+    width:50%;
+    height: 80%;
+    border:1px solid #fff;
+    border-radius: 5px;
+}
+.sec5 .s5-flexbottom .s5-empty .s5-inembot:hover{
+    cursor: pointer;
+}
+/*--------Section-5 End---------*/
+/*--------Section-6 Start---------*/
+.sec6{
+    width: 100%;
+    z-index: -1;
+}
+.sec6 iframe{
+    width: 100%;
+}
+/*--------Section-6 End---------*/
+/*--------Section-7 Start---------*/
+
+/*--------Section-7 End---------*/
+
+/*------------Media Query start---------*/
+@media screen and (max-width:1024px) {
+    .header .black nav div.manu ul div{
+        display: inline-block;
+    }
+    .header .black nav div.manu ul li{
+        display:none;
+    }
+    .sec1 .s1-up .feature .conoffeature{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sec1 .s1-up .feature .conoffeature div{
+        width:30%
+    }
+    .sec1 .s1-up .feature .conoffeature div:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .sec1 .s1-up .feature .conoffeature div:last-child{
+        width:40%
+    }
+    .sec1 .s1-bottom .s1-content .s1-img img{
+        width:30rem;
+    }
+    .sec1 .s1-bottom .s1-content .s1-img img{
+        float: none;
+        display: block;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card{
+        width:23%;
+    }
+    .sec4 .s4-flex .s4-content{
+        width: 88%;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card{
+        width:30%;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .sec5 .s5-flexbottom .s5-empty{
+        width:60%;
+    }
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 9px;
+    }
+    .header .background-img .content .inner-content{
+        width:100%;
+    }
+    .sec1 .s1-up .feature .conoffeature{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sec1 .s1-up .feature .conoffeature div{
+        width:40%
+    }
+    .sec1 .s1-up .feature .conoffeature div:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .sec1 .s1-bottom .s1-content{
+        flex-wrap:wrap ;
+    }
+    .sec1 .s1-bottom .s1-content div{
+        width:100%;
+    }
+    .sec2 .s2-flex .s2-content{
+        flex-direction: column-reverse;
+      
+     }
+     .sec2 .s2-flex .s2-content div{
+        width:100%;
+     }
+     .sec2 .s2-flex .s2-content .s2-inimg{
+        height: 70vh;
+    }
+    .sec2 .s2-flex .s2-content .s2-inimg img{
+       width: 18rem;
+    }
+    .sec3 .s3-flexup .s3-content{
+        flex-direction: column;
+    }
+    .sec3 .s3-flexup .s3-content .s3-inpara{
+        overflow: hidden;
+        width:100%;
+    }
+    .sec3 .s3-flexup .s3-content div:nth-child(2){
+        margin-bottom: 3rem;
+    }
+    .sec3 .s3-flexup .s3-content .s3-inpara p:first-child{
+        margin-bottom: 1.5rem;
+    }
+    .sec3 .s3-flexbottom nav{
+         flex-direction: column;
+    }
+    .sec3 .s3-flexbottom nav div{
+        width: 100%;
+    }
+    .sec4 .s4-flex .s4-content{
+        width: 88%;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card{
+        width:45%;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .sec5 .s5-flex .s5-content .s5-card .card{
+        width:45%;
+    }
+    .sec5 .s5-flexbottom .s5-empty{
+        width:70%;
+    }
+}
+@media screen and (max-width:480px) {
+    .sec1 .s1-up .feature .conoffeature{
+        flex-direction: column;
+    }
+    .sec1 .s1-up .feature .conoffeature div{
+        width:100%
+    }
+    .sec1 .s1-up .feature .conoffeature div:last-child{
+        width:100%
+    }
+    .sec2 .s2-flex .s2-content .s2-inimg{
+        height: 60vh;
+    }
+    .sec2 .s2-flex .s2-content .s2-inimg img{
+       width: 15rem;
+    }
+    .sec3 .s3-flexbottom nav .s3-btn button:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    .sec4 .s4-flex .s4-content .s4-card .card{
+        width:62%;
+    }
+    .sec5 .s5-flex .s5-content .s5-card .card{
+        width:70%;
+    }
+    .sec5 .s5-flexbottom .s5-empty{
+        width:75%;
+        height: 15rem;
+    }
+}
+
+/*------------Media Query End---------*/
