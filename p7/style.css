@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;1,100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+}
+html{
+    font-size: 10px;
+}
+.flex{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding:3rem;
+}
+button{
+    background-color: #fff;
+    padding:1rem 2.5rem;
+    border:1px solid #01a3a4;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition-property: background-color,color;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #01a3a4;
+    color:#fff;
+    cursor: pointer;
+}
+.btn-active{
+    background-color: #01a3a4;
+    color:#fff;
+    transition-property: background-color,color;
+    transition: 0.3s ease-in-out;
+}
+.btn-active:hover{
+     background-color: #fff;
+     color:#01a3a4
+}
+.h2-active{
+    color:#01a3a4 ;
+}
+.icon-active{
+    color: #f1c40f;
+}
+/*-------Header start------------*/
+.header{
+    width:100%;
+    overflow: hidden;
+}
+.header .h-flex{
+    padding:0px;
+}
+.header .h-flex .in-header{
+    width:90%;
+    overflow: hidden;
+    position:relative;
+}
+.header .h-flex .in-header .header-img{
+    position:absolute;
+    right:0px;
+    z-index: -1;
+    width:35%;
+    height: 100%;
+}
+.header .h-flex .in-header .header-img img{
+    width:100%;
+    height: 100%;
+    border-bottom-left-radius: 130px;
+}
+.header .h-flex .in-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.header .h-flex .in-header nav .logo{
+    color:#01a3a4;
+}
+.header .h-flex .in-header nav .logo:hover{
+    cursor: pointer;
+}
+.header .h-flex .in-header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.header .h-flex .in-header nav ul li{
+    padding:1rem 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.header .h-flex .in-header nav ul li:hover{
+    background-color: black;
+    color: #fff;
+}
+.header .h-flex .in-header nav ul li:hover a{
+    color: #fff;
+}
+.header .h-flex .in-header nav ul li a{
+    text-decoration: none;
+    color:black;
+    transition:color 0.3s ease-in-out;
+}
+.header .h-flex .in-header .content{
+    font-size: 2rem;
+    width:50%;
+    margin-bottom: 3rem;
+}
+.header .h-flex .in-header .content h2:nth-child(3){
+    margin-bottom: 2rem;
+}
+
+.header .h-flex .in-header .content p{
+   font-size: 1.2rem;
+}
+.header .h-flex .in-header .content .btn{
+    overflow: hidden;
+    margin-top: 2rem;
+}
+/*-------Header End------------*/
+
+/*--------section1 start------------*/
+.sec1{
+    width:100%;
+    overflow: hidden;
+}
+.sec1 .s1-flex .content{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sec1 .s1-flex .content h2{
+    color:#01a3a4;
+    padding:1rem;
+    transition-property: background-color,color;
+    transition: 0.3s ease-in-out;
+}
+.sec1 .s1-flex .content h2:hover{
+    background-color: #01a3a4;
+    color:#fff;
+}
+/*--------section1 End------------*/
+
+
+/*--------section2 start------------*/
+.sec2{
+    width:100%;
+    overflow: hidden;
+}
+.sec2 .s2-flex .content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .s2-flex .content .para{
+    width:48%;
+    font-size: 1.5rem;
+}
+.sec2 .s2-flex .content .para p{
+    margin-bottom: 1rem;
+}
+.sec2 .s2-flex .content .heading{
+    margin-top: 0px;
+    width:48%;
+    font-size: 1.8rem;
+}
+/*--------section2 End------------*/
+
+/*--------section3 start------------*/
+.sec3{
+    width:100%;
+    overflow: hidden;
+    min-height: 60vh;
+}
+.sec3 .s3-flex .content{
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sec3 .s3-flex .content .image{
+    width:40%;
+    height: 38em;
+
+}
+.sec3 .s3-flex .content .image img{
+    width:100%;
+    height: 100%;
+    border-top-right-radius: 50px;
+}
+.sec3 .s3-flex .content .para{
+    width: 55%;
+    min-height: 100%;
+
+}
+.sec3 .s3-flex .content .para .p{
+   font-size: 1.5rem;
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+}
+.sec3 .s3-flex .content .para .p:not(:last-child){
+    margin-bottom: 1rem;
+ }
+.sec3 .s3-flex .content .para .p h2{
+    width:30%;
+    text-align: center;
+}
+/*--------section3 End------------*/
+/*--------section4 start------------*/
+.sec4{
+    width:100%;
+    overflow: hidden;
+}
+.sec4 .s4-flex .content{
+    width:70%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sec4 .s4-flex .content h1{
+    margin-bottom: 2rem;
+}
+/*--------section4 End------------*/
+/*--------section5 start------------*/
+.sec5{
+    width:100%;
+    overflow: hidden;
+}
+.sec5 .s5-flex .content{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec5 .s5-flex .content .card{
+    width:32%;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+}
+.sec5 .s5-flex .content .card nav{
+    width: 90%;
+    margin:2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec5 .s5-flex .content .card nav div:hover{
+    cursor: pointer;
+}
+.sec5 .s5-flex .content .card img{
+    display: block;
+    margin: 1rem auto;
+    width:7rem;
+    height: 7rem;
+    border-radius: 100px;
+}
+.sec5 .s5-flex .content .card img:hover{
+    cursor: pointer;
+}
+.sec5 .s5-flex .content .card p{
+     margin-top:1rem ;
+}
+.sec5 .s5-flex .content .card h2:last-child{
+    margin-bottom:1rem ;
+}
+/*--------section5 End------------*/
+/*--------section6 start------------*/
+.sec6{
+    overflow: hidden;
+    background-image: url(image/banar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec6 .s6-flex .content{
+    padding:2rem;
+    width:75%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #222f3e;
+}
+.sec6 .s6-flex .content h2{
+    margin-bottom: 2rem;
+}
+.sec6 .s6-flex .content p:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+/*--------section6 End------------*/
+/*--------section7 start------------*/
+
+.sec7{
+    width: 100%;
+    overflow: hidden;
+}
+.sec7 .s7-flex .content{
+    width:90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sec7 .s7-flex .content h2{
+    margin-bottom: 1rem;
+}
+/*--------section7 End------------*/
+/*--------section8 start------------*/
+.sec8{
+    width:100%;
+    overflow: hidden;
+}
+.sec8 .s8-flex .content{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec8 .s8-flex .content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+}
+.sec8 .s8-flex .content form input{
+    width: 95%;
+    margin-bottom: 1rem;
+    padding:0.7rem;
+    border: none;
+    background-color: #ecf0f1;
+}
+.sec8 .s8-flex .content form textarea{
+    width: 95%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    padding:0.7rem;
+    border: none;
+    background-color: #ecf0f1;
+}
+.sec8 .s8-flex .content .image{
+    width:60%;
+}
+.sec8 .s8-flex .content .image img{
+    width:60%;
+    display: block;
+    margin: auto;
+
+}
+/*--------section8 End------------*/
+/*--------section9 Start------------*/
+.sec9{
+    width:100%;
+    overflow: hidden;
+}
+.sec9 .s9-flex .content{
+    overflow: hidden;
+    width:90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sec9 .s9-flex .content h2{
+    margin-bottom: 1rem;
+}
+/*--------section9 End------------*/
+/*--------section10 Start------------*/
+.sec10{
+    width: 100%;
+    overflow: hidden;
+}
+.sec10 .s10-flex .content{
+    width:90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec10 .s10-flex .content .card{
+    width:45%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(image/banar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.sec10 .s10-flex .content .card h2{
+    margin-bottom: 1rem;
+}
+/*--------section10 End------------*/
+/*--------section11 Start------------*/
+.sec11{
+    width:100%;
+    overflow: hidden;
+}
+.sec11 .s11-flex .content{
+    width:90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sec11 .s11-flex .content p{
+    margin: 1.5rem 0rem;
+}
+/*--------section11 End------------*/
+/*--------section12 Start------------*/
+.sec12{
+    width: 100%;
+    overflow: hidden;
+}
+.sec12 .s12-flex .content{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.sec12 .s12-flex .content .card{
+    width:21%;
+    font-size: 1.5rem;
+}
+.sec12 .s12-flex .content .card .icon i{
+    font-size: 2rem;
+    color: #01a3a4;
+    transition: color 0.3s ease-in-out;
+}
+.sec12 .s12-flex .content .card .icon i:hover{
+    cursor: pointer;
+    color: #000;
+}
+.sec12 .s12-flex .content .card p{
+margin: 0.8rem 0rem;
+}
+/*--------section12 End------------*/
+/*--------section13 Start------------*/
+.sec13{
+    width:100%;
+    overflow: hidden;
+}
+.sec13 .s13-flex{
+    padding:2rem;
+}
+.sec13 .s13-flex .content{
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+/*--------section13 End------------*/
+
+/*******************************************************************************************************************************/
+/*--------------------------------------------------/Media Query Start/--------------------------------------------------------*/
+/*******************************************************************************************************************************/
+@media screen  and (min-width:1124px){
+    .header .h-flex .in-header{
+        width:100%;
+    }
+    .header .h-flex .in-header .content{
+        padding: 1rem;
+    }
+    .header .h-flex .in-header .header-img{
+        width:100%;
+    }
+    .header .h-flex .in-header .header-img img{
+        border-bottom-left-radius: 0px;
+    }
+    .header .h-flex .in-header nav .logo{
+        color:#fff;
+    }
+    .header .h-flex .in-header .content .h2-active{
+        color:#fff;
+    }
+    .header .h-flex .in-header .content p{
+       color:#fff;
+    }
+    .sec1 .s1-flex .content{
+        max-width:85%;
+    }
+    .sec5 .s5-flex .content{
+        width:70%;
+    }
+
+}
+@media screen  and (max-width:1024px){
+    .header .h-flex .in-header .header-img{
+        width:50%;
+    }
+    .sec3 .s3-flex .content .para .p h2{
+        width:40%;
+    }
+    
+}
+@media screen  and (max-width:768px){
+    .header .h-flex .in-header{
+        width:100%;
+    }
+    .header .h-flex .in-header .content{
+        padding: 1rem;
+        width:80%;
+    }
+    .header .h-flex .in-header .header-img{
+        width:100%;
+    }
+    .header .h-flex .in-header .header-img img{
+        border-bottom-left-radius: 0px;
+    }
+    .header .h-flex .in-header nav .logo{
+        color:#fff;
+    }
+    .header .h-flex .in-header .content .h2-active{
+        color:#fff;
+    }
+    .header .h-flex .in-header .content p{
+       color:#fff;
+    }
+    .sec3 .s3-flex .content{
+       flex-direction: column;
+       align-items: center;
+    }
+    .sec3 .s3-flex .content .image{
+        width: 55%;
+    
+    }
+    .sec3 .s3-flex .content .para{
+        width: 100%;
+        margin-top: 1rem;
+        overflow: hidden;
+    
+    }
+    .sec4 .s4-flex .content{
+        width:80%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .sec5 .s5-flex .content {
+        justify-content: space-around;
+    }
+    .sec5 .s5-flex .content .card{
+        width:48%;
+    }
+    .sec5 .s5-flex .content .card:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+    .sec6 .s6-flex .content{
+        width:85%;
+    }
+    .sec8 .s8-flex .content form{
+        width:50%;
+    }
+    .sec8 .s8-flex .content .image{
+        width:50%;
+    }
+    .sec8 .s8-flex .content .image img{
+        width:90%;
+    
+    }
+    .sec10 .s10-flex .content {
+        width: 95%;
+    }
+    .sec10 .s10-flex .content .card{
+        width:48%;
+        font-size: 1.3rem;
+    }
+    .sec12 .s12-flex .content{
+        justify-content: space-around;
+    }
+    .sec12 .s12-flex .content .card{
+        width:40%;
+    }
+    .sec12 .s12-flex .content .card:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen  and (max-width:480px){
+    html{
+        font-size: 11px;
+    }
+    .header .h-flex .in-header .content{
+        padding: 1rem;
+        width:90%;
+    }
+    .header .h-flex .in-header nav{
+        flex-direction: column;
+    }
+    .header .h-flex .in-header nav ul{
+       width:100%;
+       font-size: 1.1rem;
+    }
+    .header .h-flex .in-header nav ul li{
+        background-color: #000;
+        border-radius: 20px;
+    }
+    .header .h-flex .in-header nav ul li:hover{
+        background-color: #01a3a4;
+        border-radius: 20px;
+    }
+    .header .h-flex .in-header nav .logo{
+        margin-bottom: 1rem;
+    }
+    .header .h-flex .in-header nav ul li a{
+        color: #fff;
+    }
+    .header .h-flex .in-header nav ul li:not(:last-child){
+        margin-right: 1rem;
+    }
+    .sec1 .s1-flex .content{
+        width:98%;
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .sec1 .s1-flex .content h2{
+        background-color: #000;
+        color:#fff;
+        padding:1rem 1.5rem;
+        border-radius: 20px;
+    }
+    .sec1 .s1-flex .content h2:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    .sec2 .s2-flex .content{
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+    }
+    .sec2 .s2-flex .content .para{
+        width:100%;
+        font-size: 1.5rem;
+    }
+    .sec2 .s2-flex .content .para p{
+        margin-bottom: 1rem;
+    }
+    .sec2 .s2-flex .content .heading{
+        margin-top: 0px;
+        width:90%;
+        font-size: 1.8rem;
+    }
+    .sec2 .s2-flex .content .heading{
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    .sec3 .s3-flex .content .image{
+        width: 90%;
+    
+    }
+    .sec5 .s5-flex .content .card{
+        width:85%;
+    }
+    .sec6 .s6-flex .content{
+        width:90%;
+        color: #fff;
+    }
+    .sec8 .s8-flex .content {
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+    .sec8 .s8-flex .content form{
+        width:100%;
+    }
+    .sec8 .s8-flex .content .image{
+        width:100%;
+        margin-bottom: 1rem;
+    }
+    .sec8 .s8-flex .content .image img{
+        width:90%;
+    
+    }
+    .sec10 .s10-flex .content {
+        flex-wrap: wrap;
+    
+    }
+    .sec10 .s10-flex .content .card{
+        width:100%;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    .sec12 .s12-flex .content{
+        flex-direction: column;
+    }
+    .sec12 .s12-flex .content .card{
+        width:100%;
+    }
+}
+
+
+
+
+/*******************************************************************************************************************************/
+/*--------------------------------------------------/Media Query End/----------------------------------------------------------*/
+/*******************************************************************************************************************************/
