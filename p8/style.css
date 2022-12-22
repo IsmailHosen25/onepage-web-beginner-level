@@ -1,0 +1,469 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.flex{
+    width:100;
+    padding:2rem 0rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    color:#44bd32;
+}
+button{
+    padding:0.8rem 2rem;
+    background-color: #000;
+    color: #fff;
+    transition-property: background-color,color,outline;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    outline: 1px solid black;
+    color: #000;
+}
+/*-------------------Header Start---------------------*/
+header{
+    width:100%;
+    overflow: hidden;
+}
+header .h-flex .content{
+    width:90%;
+    overflow: hidden;
+}
+header .h-flex .content nav{
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+header .h-flex .content nav .logo img{
+    width:8rem;
+}
+header .h-flex .content nav .logo img:hover{
+    cursor: pointer;
+}
+header .h-flex .content nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header .h-flex .content nav ul li{
+    padding:1rem 1.5rem;
+    transition-property: background-color;
+    transition: 0.3s ease-in-out;
+}
+header .h-flex .content nav .manu{
+    font-size: 2.5rem;
+    display:none;
+}
+header .h-flex .content nav ul li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+header .h-flex .content nav ul li:hover a{
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+header .h-flex .content nav ul li:hover:first-child a{
+    color:#fff;
+    transition: color 0.3s ease-in-out;
+}
+header .h-flex .content nav ul li a{
+    text-decoration: none;
+    font-size:1.8rem;
+    color: black;
+}
+header .h-flex .content nav ul li:first-child a{
+    color:#44bd32;
+    transition: color 0.3s ease-in-out;
+}
+header .h-flex .content .in-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+header .h-flex .content .in-content .left{
+    font-size: 2rem;
+    width: 53%;
+}
+header .h-flex .content .in-content .left h1{
+    margin: 1rem 0rem;
+}
+header .h-flex .content .in-content .left p{
+    margin-bottom: 2rem;
+}
+header .h-flex .content .in-content .left input{
+    padding:0.5rem 0.8rem;
+    width:30%;
+    margin-bottom: 2rem;
+}
+header .h-flex .content .in-content .left input::placeholder{
+    color:#44bd32;
+}
+header .h-flex .content .in-content .left label{
+    background-color: black;
+    color: #fff;
+    padding:0.5rem 0.8rem;
+    width:30%;
+    transition-property: background-color,color, outline;
+    transition: 0.3s ease-in-out;
+}
+header .h-flex .content .in-content .left label:hover{
+    cursor: pointer;
+    background-color: #fff;
+    outline: 1px solid #000;
+    color: #000;
+
+}
+header .h-flex .content .in-content .right{
+    width:45%;
+
+}
+header .h-flex .content .in-content .right img{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+/*------------------Header End---------------------*/
+/*-------------------Section1 Start---------------------*/
+.sec1{
+    width:100%;
+    overflow: hidden;
+}
+.sec1 .s1-flex .content{
+    overflow: hidden;
+    width:90%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid black;
+}
+.sec1 .s1-flex .content .about{
+    width:48%;
+    font-size: 1.5rem;
+    padding:2rem 3rem;
+}
+.sec1 .s1-flex .content .about h1{
+    display: inline;
+    padding:0.3rem;
+    background-color: #44bd32;
+    color:white;
+}
+.sec1 .s1-flex .content .about p{
+   margin:2rem 0rem;
+}
+.sec1 .s1-flex .content .about .btn{
+    border-radius: 20px;
+ }
+.sec1 .s1-flex .content .image{
+    width:50%;
+}
+.sec1 .s1-flex .content .image img{
+    width:100%;
+}
+/*-------------------Section1 End---------------------*/
+/*-------------------Section2 Start---------------------*/
+.sec2{
+    width:100%;
+    overflow: hidden;
+}
+.sec2 .s2-flex .content{
+    width:90%;
+    overflow: hidden;
+}
+.sec2 .s2-flex .content .heading{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sec2 .s2-flex .content .main-content{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap-reverse;
+}
+.sec2 .s2-flex .content .main-content .best-vegetable{
+  font-size: 1.5rem;
+  width:48%;
+  text-align: left;
+}
+.sec2 .s2-flex .content .main-content .best-vegetable h3{
+   margin-bottom: 2rem;
+}
+.sec2 .s2-flex .content .main-content .image{
+    width:50%;
+}
+.sec2 .s2-flex .content .main-content .image img{
+    width:100%;
+}
+/*-------------------Section2 End---------------------*/
+/*-------------------Section3 Start---------------------*/
+.sec3{
+    width:100%;
+}
+.sec3 .s3-flex .content{
+    width:90%;
+}
+.sec3 .s3-flex .content .heading{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.sec3 .s3-flex .content form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:1rem;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+.sec3 .s3-flex .content form input{
+    padding:0.5rem 0.8rem;
+    width:35%;
+    margin:1rem 0rem;
+}
+.sec3 .s3-flex .content form textarea{
+    width:70%;
+    padding:0.5rem 0.8rem;
+    margin-bottom: 1rem;
+}
+.sec3 .s3-flex .content form .btn{
+    width:20%;
+    border:none;
+}
+/*-------------------Section3 End---------------------*/
+/*-------------------Section4 Start---------------------*/
+.sec4{
+    width:100%;
+    overflow: hidden;
+    background-color: #000;
+}
+.sec4 .s4-flex .content{
+    width:90%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4 .s4-flex .content .address{
+  font-size: 1.3rem;
+  color:#fff;
+  width:32%;
+}
+.sec4 .s4-flex .content .address h2{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .content .address address p:not(:first-child){
+    margin-top: 0.5rem;
+}
+.sec4 .s4-flex .content .social-link{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size:1.3rem;
+    width:32%;
+}
+.sec4 .s4-flex .content .social-link h2{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .content .social-link a{
+    color: #fff;
+    text-decoration: none;
+}
+.sec4 .s4-flex .content .social-link a:not(:first-child){
+    margin-top:0.5rem;
+}
+.sec4 .s4-flex .content .newsletter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 1.3rem;
+    width:32%;
+}
+.sec4 .s4-flex .content .newsletter h2{
+    margin-bottom: 1rem;
+}
+.sec4 .s4-flex .content .newsletter input{
+    padding:0.5rem 0.5rem;
+    width: 70%;
+    margin-bottom: 0.8rem;
+}
+.sec4 .s4-flex .content .newsletter input::placeholder{
+    color:#44bd32;
+}
+.sec4 .s4-flex .content .newsletter .btn{
+    background-color: #44bd32;
+    border:none;
+    border-radius: 20px;
+}
+/*-------------------Section4 End---------------------*/
+/*-------------------Section5 Start---------------------*/
+.sec5{
+    overflow: hidden;
+    width:100%;
+    background-color: #44bd32;
+}
+.sec5 .s5-flex .content{
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    color:#fff;
+}
+/*-------------------Section5 End---------------------*/
+/*********************************************************************************************************/
+/*---------------------------------------------Media Query Start-----------------------------------------*/
+/*********************************************************************************************************/
+@media screen and (min-width:1201px){
+    
+}
+@media screen and (max-width:1200px){
+}
+@media screen and (max-width:1024px){
+    header .h-flex .content .in-content .left{
+        font-size: 1.8rem;
+        width: 50%;
+    }
+    header .h-flex .content .in-content .right{
+        width: 50%;
+    }
+    .sec1 .s1-flex .content .about{
+        width:100%;
+    }
+    .sec1 .s1-flex .content .image{
+        width:60%;
+    }
+    .sec4 .s4-flex .content .newsletter input{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    header .h-flex .content nav ul{
+        display: none;
+    }
+    header .h-flex .content nav .manu{
+        display: inline-block;
+        z-index: 999;
+        border:1px solid #000;
+        padding: 0.2rem 0.5rem;
+    }
+    header .h-flex .content nav .responsive-active{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.8rem 0rem;
+        width:80%;
+        height: 50%;
+        background-color: aqua;
+        position: absolute;
+        top:20%;
+        left:50% ;
+        transform: translate(-50%);
+        transition: all 1s ease-in-out;
+        background-color: #000;
+        opacity: 0.8;
+        text-align: center;
+    }
+    header .h-flex .content nav ul li a{
+        color:white;
+    }
+    header .h-flex .content .in-content .left{
+        width: 100%;
+    }
+    header .h-flex .content .in-content .left input{
+        width:50%;
+    }
+    header .h-flex .content .in-content .right{
+        width: 100%;
+    }
+    .sec1 .s1-flex .content .image{
+        width:75%;
+    }
+    .sec2 .s2-flex .content .main-content .best-vegetable{
+        width:100%;
+      }
+      .sec2 .s2-flex .content .main-content .image{
+          width:75%;
+      }
+      .sec3 .s3-flex .content form input{
+        width:50%;
+    }
+    .sec3 .s3-flex .content form textarea{
+        width:90%;
+    }
+    .sec3 .s3-flex .content form .btn{
+        width:25%;
+    }
+}
+@media screen and (max-width:480px){
+    header .h-flex .content .in-content .left input{
+        width:60%;
+    }
+    .sec1 .s1-flex .content .image{
+        width:100%;
+    }
+    .sec1 .s1-flex .content .about p{
+        font-size: 2rem;
+     }
+    .sec2 .s2-flex .content .main-content .image{
+        width:100%;
+    }
+    .sec2 .s2-flex .content .main-content .best-vegetable p{
+        font-size: 2rem;
+     }
+     .sec3 .s3-flex .content{
+        width:95%;
+    }
+     .sec3 .s3-flex .content form input{
+        width:100%;
+    }
+    .sec3 .s3-flex .content form textarea{
+        width:100%;
+    }
+    .sec3 .s3-flex .content form .btn{
+        width:35%;
+    }
+    .sec4 .s4-flex .content{
+        justify-content: space-around;
+    }
+    .sec4 .s4-flex .content .address{
+        width:100%;
+    }
+    .sec4 .s4-flex .content .social-link{
+        margin-top:2.5rem;
+        width:100%;
+    }
+    .sec4 .s4-flex .content .newsletter{
+        margin-top:2.5rem;
+        width:100%;
+    }
+    .sec4 .s4-flex .content .newsletter input{
+        width: 80%;
+    }
+}
+/*********************************************************************************************************/
+/*---------------------------------------------Media Query End-----------------------------------------*/
+/*********************************************************************************************************/
